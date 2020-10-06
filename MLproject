@@ -1,0 +1,15 @@
+name: Iris Project
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      alpha: 
+      	type : float
+      	default : 0.5
+      l1_ratio: 
+      	type: float 
+      	default: 0.1
+    command: "python model.py -r {alpha} {l1_ratio}"
+  
